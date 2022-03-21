@@ -16,7 +16,7 @@ public class ThreadPoolDemo {
         ExecutorService executorService3 = Executors.newSingleThreadExecutor();
         Long startTime = System.currentTimeMillis();
         for (int i = 1; i <= 100; i++) {
-            executorService3.execute(new MyTaskRunnable(i));
+            executorService1.execute(new MyTaskRunnable(i));
         }
         Long endTime = System.currentTimeMillis();
         System.out.println("消耗时间为："+(endTime-startTime)+"毫秒");
