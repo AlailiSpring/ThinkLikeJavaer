@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @Description:
+ * @Description: JDK1.8 Stream的写法
  * @Author: LiBaoDeng
  * @Date: 2022-03-22 23:19
  */
@@ -19,6 +19,7 @@ public class StreamDemo {
 
         System.out.println("--------------");
 
+        //stream过滤，不会改变原有元素
         userList.stream().filter((user) -> user.getId() % 2 == 0)
         .sorted(Comparator.comparingInt(User::getId)).limit(1).forEach(System.out::println);
     }
