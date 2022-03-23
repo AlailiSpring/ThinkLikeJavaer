@@ -18,9 +18,11 @@ public class LambdaDemo {
         Supplier<String> supplier = () -> UUID.randomUUID().toString();
         System.out.println(supplier.get());
 
+        //有参数，有返回值
         Function<Integer, Integer> function = (t) -> t * 2;
         System.out.println(function.apply(6));
 
+        //有参数，有返回值
         Predicate<String> predicate = (t) -> t.equals("f");
         predicate.test("aa");
     }

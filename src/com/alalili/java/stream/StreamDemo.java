@@ -1,8 +1,6 @@
 package com.alalili.java.stream;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -24,8 +22,20 @@ public class StreamDemo {
         userList.stream().filter((user) -> user.getId() % 2 == 0)
         .sorted(Comparator.comparingInt(User::getId)).limit(1).forEach(System.out::println);
 
-        //stream筛选元素进行赋值
+        //stream筛选元素进行赋值,根据Collectors可以设置不同的容器类型
         List<User> users=userList.stream().filter((user) -> user.getId() % 2 == 0)
                 .sorted(Comparator.comparingInt(User::getId)).limit(1).collect(Collectors.toList());
+
+        //数据转换的玩法,条件筛选符合条件的User ID 列表
+        List<Integer> idList = userList.stream().map(User::getId).collect(Collectors.toList());
+
+        //根据sex进行分组
+        Map<String, List<User>> sexMap = userList.stream().collect(Collectors.groupingBy(User::getSex));
+        Iterator<Map.Entry<String, List<User>>> iterator = sexMap.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, List<User>> next = iterator.next();
+            System.out.println("key is:" + next.getKey());
+            System.out.println("Value is" + next.getValue());
+        }
     }
 }
