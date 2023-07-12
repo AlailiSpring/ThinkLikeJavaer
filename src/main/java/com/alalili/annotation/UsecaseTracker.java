@@ -1,4 +1,4 @@
-package main.java.com.alalili.annotation;
+package com.alalili.annotation;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

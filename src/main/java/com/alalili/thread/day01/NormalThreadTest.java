@@ -1,4 +1,4 @@
-package main.java.com.alalili.thread.day01;
+package com.alalili.thread.day01;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.com.alalili.thread.day02;
+package com.alalili.thread.day02;
 
 /**
  * @Description:

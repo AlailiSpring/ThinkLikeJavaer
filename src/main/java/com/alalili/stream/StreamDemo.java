@@ -1,4 +1,4 @@
-package main.java.com.alalili.stream;
+package com.alalili.stream;
 
 import java.util.*;
 import java.util.stream.Collectors;
