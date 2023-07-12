@@ -1,4 +1,4 @@
-package com.alalili.java.annotation;
+package main.java.com.alalili.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

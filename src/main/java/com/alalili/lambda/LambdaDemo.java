@@ -1,4 +1,4 @@
-package com.alalili.java.lambda;
+package main.java.com.alalili.lambda;
 
 import java.util.UUID;
 import java.util.function.Consumer;

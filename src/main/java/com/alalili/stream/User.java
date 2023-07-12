@@ -1,4 +1,4 @@
-package com.alalili.java.stream;
+package main.java.com.alalili.stream;
 
 /**
  * @Description:

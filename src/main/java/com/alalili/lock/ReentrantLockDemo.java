@@ -1,4 +1,4 @@
-package com.alalili.java.lock;
+package main.java.com.alalili.lock;
 
 
 import java.util.concurrent.locks.ReentrantLock;

@@ -1,4 +1,4 @@
-package com.alalili.java.annotation;
+package main.java.com.alalili.annotation;
 
 import java.util.List;
 
