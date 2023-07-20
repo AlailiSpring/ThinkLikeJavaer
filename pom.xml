@@ -12,6 +12,18 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <fastjson2.version>2.0.10</fastjson2.version>
+        <jackson.version>2.13.0</jackson.version>
     </properties>
 
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+            <version>${fastjson2.version}</version>
+        </dependency>
+    </dependencies>
 </project>
