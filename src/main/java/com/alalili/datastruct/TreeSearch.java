@@ -1,5 +1,7 @@
 package com.alalili.datastruct;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,5 +54,16 @@ public class TreeSearch {
         for (TreeNode node : associatedNodes) {
             System.out.println(node.getId());
         }
+
+
+        String str = "Hello\nWorld\nThis is a\ntest string\n1";
+        int lastIndex = str.lastIndexOf("\n");
+        String newStr = str.substring(0, lastIndex).replaceAll("\n", "") + str.substring(lastIndex);
+        System.out.println(newStr);
+
+
+        BigDecimal originalNumber = new BigDecimal("33333.126000");
+        BigDecimal roundedNumber = originalNumber.setScale(2, BigDecimal.ROUND_HALF_UP);
+        System.out.println(roundedNumber.toString());
     }
 }
